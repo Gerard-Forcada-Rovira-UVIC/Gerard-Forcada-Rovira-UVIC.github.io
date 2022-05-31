@@ -3,13 +3,73 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Model viewer</title>
+	<title>La roda de la fortuna</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Syne Mono|Pacifico">
+	<style type="text/css">
+		*{
+			margin-left: auto;
+			margin-right: auto;
+			padding: 5px;
+			margin: 10px;
+			border-radius: 25px;
+		}
+		body{
+			background-color: rgb(0, 0, 0);
+			text-align: center;
+		}
+		p{
+			font-family: Syne Mono, Pacifico, arial, sans-serif ;
+			font-size: 40px;
+			color: white;
+		}
+		.block{
+			width: 80%;
+			margin-left: 10%;
+			display: flex;
+			justify-content: center;
+			background-color: rgb(100, 100, 100);
+		}
+		.block img{
+			opacity: .6;
+			transition-duration: .3s;
+			transition-timing-function: ease-in-out;
+		}
+		.block img:hover{
+			z-index: 1;
+			opacity: 1;
+			transform: scale(1.2);
+		}
+	</style>
 </head>
 <body>
-	<!-- Import the component -->
-<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
-<!-- Use it like any other HTML element -->
-<model-viewer alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum" src="shared-assets/models/NeilArmstrong.glb" ar ar-modes="webxr scene-viewer quick-look" environment-image="shared-assets/environments/moon_1k.hdr" poster="shared-assets/models/NeilArmstrong.webp" seamless-poster shadow-intensity="1" camera-controls enable-pan></model-viewer>
+	<p>Per a descarregar la documentació apreta <a href="./dibuix/LaRodaDeLaFortuna_GerardForcada.pdf" download>aquí</a>.</p>
+
+	<p>La carta:</p>
+	<div class="block">
+		<img src="./dibuix/RuedaDeLaFortuna_FRONT.png">
+		<img src="./dibuix/RuedaDeLaFortuna_BACK.png">
+	</div>
+
+	<p>Formes basiques:</p>
+	<div class="block">
+		<img src="./dibuix/full de gir.png" width="400px">
+		<img src="./dibuix/esboços.png" width="400px">
+		<img src="./dibuix/expresions.png" width="400px">
+	</div>
+
+	<p>Fons:</p>
+	<div class="block">
+		<img src="./dibuix/fons1.png" width="400px">
+		<img src="./dibuix/fons2.png" width="400px">
+	</div>
+
+	<p>Props:</p>
+	<div class="block">
+		<img src="./dibuix/item1.png" width="400px">
+		<img src="./dibuix/item2.png" width="400px">
+		<img src="./dibuix/item3.png" width="400px">
+	</div>
+
 </body>
 </html>
