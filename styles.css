@@ -56,7 +56,7 @@ p {
 	flex-wrap: wrap; no-wrap
 	justify-content: space-between;
 	align-self: center;
-	width: 80%;
+	width: 70%;
 	height: 80%;
 	border: 3px double rgb(191,157,61);
 	padding-bottom: 30px;
@@ -74,7 +74,7 @@ p {
 .infoBlock{
 	background-color: rgba(191,157,61,.6);
 	align-self: center;
-	flex-wrap: wrap; no-wrap
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-self: center;
 	width: 80%;
@@ -85,23 +85,25 @@ p {
 .buttonBase{
 	margin-top: 20px;
 	background-color: rgba(127,180,184,.8);
-	width: 30vw;
-	height: 33vh;
+	width: 27vw;
+	height: 30vh;
 	transition-duration: .3s;
-	transition-timing-function: ease-in;
+	transition-timing-function: ease-in-out;
 	text-align: center;
 	font-size: 36px;
+	font-weight: normal;
 }
 .buttonBase:hover{
-	opacity: 0.9;
-    transform: scale(1.1);
+	background-color: rgba(127,180,184,1);
+    transform: scale(1.15);
+	font-weight: bold;
     font-size: 54px;
 }
 
 .buttonBase img{
 	object-fit: contain;
-	height: 70%;
-	width: 70%;
+	height: 65%;
+	width: 65%;
 	border-radius: 10px;
 }
 

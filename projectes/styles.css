@@ -12,27 +12,31 @@ body{
 	background: black;
 }
 
-.pimgFDCuina, .pimgFDHabitacio, .pimgAK47, .pimgDibuixos, .pimgProps, .pimgEnProces{
+a{
+	text-decoration: none;
+}
+
+.pimgPud, .pimgTFG, .pimgPaC, .pimgDibuixos, .pimgProps, .pimgEnProces, .pimgProg{
 	position:relative;
-	opacity:0.70;
+	opacity:0.65;
 	background-position:center;
 	background-size:cover;
 	background-repeat:no-repeat;
 	background-attachment:fixed;
 }
 
-.pimgFDCuina{
-	background-image:url('./ref/cuina/rendercuina.png');
+.pimgPud{
+	background-image:url('./ref/Pud/Cuina/rendercuina.png');
 	min-height:100vh;
 }
 
-.pimgFDHabitacio{
-	background-image:url('./ref/habitacio/renderhabitacio.png');
+.pimgTFG{
+	background-image:url('./ref/TFG/SeaShanty.png');
 	min-height:100vh;
 }
 
-.pimgAK47{
-	background-image:url('./ref/AK/ak47.png');
+.pimgPaC{
+	background-image:url('./ref/PaC/ak47.png');
 	min-height:100vh;
 }
 
@@ -51,11 +55,16 @@ body{
 	min-height:100vh;
 }
 
+.pimgProg{
+	background-image:url('./ref/Prog/prog.png');
+	min-height:100vh;
+}
+
 .ptext{
 	font-family: Roboto;
 	position:absolute;
 	top:50%;
-	width:100%;
+	width:99%;
 	text-align:center;
 	color:black;
 	font-size:27px;
